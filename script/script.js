@@ -29,5 +29,5 @@ function copiar() {
     let resultadoCopia = document.querySelector("#input");
     resultadoCopia.select();
     document.execCommand("copy");
-    alert("Texto descriptografado copiado para a aréa de transferência.");
+    alert("Texto descriptografado copiado para a área de transferência.");
 }
