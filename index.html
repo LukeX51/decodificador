@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografador</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="assets/Vector.png" alt="logo_alura">
+    </header>
+    <main class="container">
+        <section class="container__left">
+            <textarea class="container__left__textarea" id="input" placeholder="Digite seu texto"></textarea>
+            <div class="container__left__btn__alert">
+                <div class="container__left__alert">
+                    <p><img src="assets/exclamacao.png" alt="alerta">Apenas letras minúsculas e sem acento</p>
+                </div>
+                <div class="container__left__btn">
+                    <button  onclick="criptografar()" class="criptografar">Criptografar</button>
+                    <button  onclick="descriptografar()" class="descriptografar">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="container__right">
+            <div id="output" class="container__right__output">
+                <img id="container__right__img" class="container__right__img" src="assets/imagemGaroto.png" alt="Garoto com lupa">
+                <h1 id="container__right__h1" class="container__right__h1">Nenhuma mensagem encontrada</h1>
+                <p id="container__right__p" class="container__right__p">Digite um texto para criptografar ou descriptografar</p>
+            </div>
+            <div class="container__right__btn">
+                <button onclick="copiar()" class="copiar" id="btn_copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="creditos">Desenvolvido por Lucas da Silva.</p>
+    </footer>
+    <script src="/script/script.js"></script>
+</body>
+</html>
